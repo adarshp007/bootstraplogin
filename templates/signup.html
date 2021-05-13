@@ -3,7 +3,7 @@
 <div class="container">
     <h1><u>Sign Up</u></h1>
      <h6>Please fill This form to create an account</h6>
-    <form>
+    <form action="{% url 'signup' %}" method="post">
         {% csrf_token %}
     <h4> First Name</h4>
         <input type="text" placeholder="First Name">
